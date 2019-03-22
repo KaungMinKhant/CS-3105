@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>
+			Using Functions
+		</title>
+		<style>
+			body{
+			background-color: violet;	
+			}
+			p{
+			font-size: 40;
+			color: blue;
+			font-family: Monotype Corsiva;
+			}
+		</style>
+	</head>
+	<body onload="hello()">
+	<p id = "something">
+		<b>
+			GREETING AND GOODBYE
+		</b>
+	</p>
+	<script>
+		function callAlert(display){
+			alert(display);
+		};
+		function hello(){
+		var name = prompt("Enter Your Name", "name");
+		callAlert(name);
+		};
+		
+		
+
+	</script>
+	</body>
+</html>

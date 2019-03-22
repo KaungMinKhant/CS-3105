@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>
+			LOG IN
+		</title>
+	</head>
+	<body>
+		<center>
+		<h1>
+			This is Log In Page.
+		</h1>
+		<label>
+			User Name:
+			<input type = "text" id = "user_name">
+		</label>
+		<br>
+		<br>
+		<label>
+			Password:
+			<input type = "password" id = "password">
+		</label>
+		<br>
+		<br>
+		<button onclick="validate()">
+			Log In
+		</button>
+		</center>
+	</body>
+	<script>
+		function validate(){
+			var user_name = document.getElementById("user_name").value;
+			var password = document.getElementById("password").value;
+			var real_user_name = "Sam";
+			var real_password = "sam123";
+			if(user_name == real_user_name && password == real_password){
+				alert("Validated");
+				open("maximumnumber.html");
+			}
+			else{
+				alert("Not Validated");
+			}
+		}
+	</script>
+</html>

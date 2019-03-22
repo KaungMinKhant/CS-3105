@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>
+			COMBO BOX
+		</title>
+	</head>
+	<body>
+		<center>
+			<h1>
+				COMBO BOX
+			</h1>
+		
+			<form id = "form1">
+				<select id = "select1" onchange="report()" multiple>
+					<option>
+						Project Management Course
+					</option>
+					<option>
+						Software Engineering Course
+					</option>
+					<option>
+						Networking Course
+					</option>
+					<option>
+						Web Development Course
+					</option>
+					<option>
+						Microsoft Application Course
+					</option>
+				</select>
+				<br>
+				<br>
+				<textarea id = "textarea1">
+				</textarea>
+			</form>
+		</center>
+	</body>
+	<script>
+		function report(){
+		var index = document.getElementById("select1").selectedIndex;
+		var option= document.getElementById("select1").options;
+		document.getElementById("textarea1").innerHTML=option[index].text;
+		}
+	</script>
+</html>
