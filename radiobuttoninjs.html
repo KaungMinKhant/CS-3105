@@ -1,24 +1,66 @@
 <html>
-	<head>
-		<title>
-			Radio Button
-		</title>
-	</head>
-	<body bgcolor = "tan">
-		<h1 align="center">
-			RADIO BUTTON JAVASCRIPT
-		</h1>
-		<input type = "radio" onclick="alertOn(this)" value="first radio">First Radio
+<head>
+	<title>
+		Radio Button
+	</title>
+</head>
+<body bgcolor = "tan">
+	<h1 align="center">
+		RADIO BUTTON JAVASCRIPT
+	</h1>
+	<form>
+		<input type = "checkbox" onclick="" value="first radio">First Radio
 		<br>
-		<input type = "radio" onclick="alertOn(this)" value="second radio">Second Radio
+		<input type = "checkbox" onclick="" value="second radio">Second Radio
 		<br>
-		<input type = "radio" onclick="alertOn(this)" value="third radio">Third Radio
+		<input type = "checkbox" onclick="" value="third radio">Third Radio
 		<br>
-		<input type = "radio" onclick="alertOn(this)" value="fourth radio">Fourth Radio
-	</body>
-	<script>
-		function alertOn(obj){
-		alert(obj.value);
+		<input type = "checkbox" onclick="" value="fourth radio">Fourth Radio
+	</form>
+	<button onclick="check()">
+		Check This
+	</button>
+	<form id = "form2">
+		<input type = "checkbox" onclick="" value="first radio">First Radio
+		<br>
+		<input type = "checkbox" onclick="" value="second radio">Second Radio
+		<br>
+		<input type = "checkbox" onclick="" value="third radio">Third Radio
+		<br>
+		<input type = "checkbox" onclick="" value="fourth radio">Fourth Radio
+	</form>
+	<button onclick="check2()">
+		Check This
+	</button>
+</body>
+<script>
+	
+
+	function check(){
+		var data = document.forms[0];
+		for(var i = 0; i < data.length; i++){
+			if(data[i].checked){
+				if(data[i].value == data[2].value){
+					alert("TRUE");
+				}
+				else{
+					alert("FALSE");
+				}
+			}
 		}
-	</script>
+	}
+	function check2(){
+		var data = document.forms[1];
+		for(var i = 0; i < data.length; i++){
+			if(data[i].checked){
+				if(data[i].value == data[1].value){
+					alert("TRUE");
+				}
+				else{
+					alert("FALSE");
+				}
+			}
+		}
+	}
+</script>
 </html>
