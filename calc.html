@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>
+		Calculator
+		</title>
+		<meta http-equiv = "x-ua-compatible" content = "IE=10">
+	</head>
+	<body>
+		<center>
+			<h1>
+				Calculator
+			</h1>
+			<input type = "text" id = "num1">
+			<input type = "text" id = "num2">
+			<button id = "btn1" onclick = "addition()">
+				+
+			</button>
+		</center>
+	</body>
+	<script type = "text/vbscript">
+	Sub addition()
+	Dim numone, numtwo, result
+	numone = CInt(document.getElementById("num1").value)
+	numtwo = CInt(document.getElementById("num2").value)
+	result = numone + numtwo
+	MsgBox result
+	End Sub
+	</script>
+</html>

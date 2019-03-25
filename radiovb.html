@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>
+		</title>
+		
+	</head>
+	<body>
+	<form id = "form1">
+		<input type = "radio" value = "1" name = "rd">1
+		<input type = "radio" value = "2" name = "rd">2
+		<input type = "radio" value = "3" name = "rd">3
+	</form>
+	<button id = "btn1" onclick = "process()">
+		Click Me
+	</button>
+	</body>
+	<script type = "text/javascript">
+	function process()
+	{
+	var data;
+	data = document.forms[0];
+	for(var i = 0; i < data.length; i++)
+		{
+			if(data[i].checked)
+			{
+				alert(data[i].value);
+			}
+		}
+	}
+	</script>
+</html>

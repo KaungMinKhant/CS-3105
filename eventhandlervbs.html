@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>
+			EVENT HANDLER
+		</title>
+		<meta http-equiv="x-ua-compatible" content="IE=10">
+	</head>
+	<body>
+		<form id = "form1">
+			<label>
+				Title
+			</label>
+			<input type = "checkbox" id = "cb1" value = "(Mr, Mrs, Miss)"> (Mr, Mrs, Miss)
+			<label>
+				Name
+			</label>
+			<input type = "text" id = "name">
+			<br>
+			<br>
+			<input type = "radio" id = "rd1" name = "rd" value = "Male">Male
+			<input type = "radio" id = "rd2" name = "rd" value = "Female">Female
+			<br>
+			<br>
+			<label>
+				Address
+			</label>
+			<input type = "textarea" id = "address">
+			<br>
+			<br>
+			<label>
+				Postal Code
+			</label>
+			<input type = "text" id = "postal_code">
+			<br>
+			<br>
+			<label>
+				Country
+			</label>
+			<select id = "select1">
+				<option id = "opt1" value  = "America" selected>
+				America
+				</option>
+				<option id = "opt1" value  = "Asia">
+				Asia
+				</option>
+				<option id = "opt1" value  = "Africa">
+				Africa
+				</option>
+			</select>
+			<br>
+			<br>
+			<label>
+				E-mail Address
+			</label>
+			<input type = "text" id = "email">
+			<br>
+			<br>
+			<button id = "btn1">
+				Submit
+			</button>
+			<input type = "text" id = "lee">
+			<br>
+			<br>
+			<textarea cols = "10" rows = "12">
+		
+			</textarea>
+		</form>
+	</body>
+	<script type = "text/vbscript">
+	Sub btn1_OnClick()
+		Dim nme
+		nme="Hello"
+		document.getElementById("lee").value = nme
+		MsgBox nme
+	End Sub
+	</script>
+</html>

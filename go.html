@@ -1,0 +1,41 @@
+<html>
+	<head>
+	</head>
+	<body>
+	<form>
+	<input type = "radio" name = "a" value = "https://www.facebook.com" onclick="show(this)">Facebook
+	<br>
+	<input type = "radio" name = "a" value = "https://www.twitter.com" onclick="show(this)">Twitter
+	<br>
+	<input type = "radio" name = "a" value = "https://www.github.com" onclick="show(this)">Github
+	<br>
+	<br>
+	<input type = "text" id = "text1">
+	<br>
+	<br>
+	<button id = "btn1" onclick="go()">
+	GO
+	</button>
+	</form>
+	</body>
+	<script>
+	function show(obj)
+	{
+	document.getElementById("text1").value = obj.value;
+	}
+	function go()
+	{
+	var data = document.forms[0];
+	var checked_data = 0;
+	for(var i = 0; i < data.length; i++)
+		{
+		if(data[i].checked)
+			{
+			checked_data = data[i].value;
+			open(checked_data);
+			}
+		}
+	}
+	
+	</script>
+</html>

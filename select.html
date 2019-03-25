@@ -12,19 +12,19 @@
 		
 			<form id = "form1">
 				<select id = "select1" onchange="report()" multiple>
-					<option>
+					<option value = "1000">
 						Project Management Course
 					</option>
-					<option>
+					<option value = "10000">
 						Software Engineering Course
 					</option>
-					<option>
+					<option value = "100000">
 						Networking Course
 					</option>
-					<option>
+					<option value = "1000000">
 						Web Development Course
 					</option>
-					<option>
+					<option value = "100">
 						Microsoft Application Course
 					</option>
 				</select>
@@ -37,9 +37,8 @@
 	</body>
 	<script>
 		function report(){
-		var index = document.getElementById("select1").selectedIndex;
-		var option= document.getElementById("select1").options;
-		document.getElementById("textarea1").innerHTML=option[index].text;
+		var data = document.getElementById("select1").value;
+		doucment.getElementById("textarea1").innerHTML=data;
 		}
 	</script>
 </html>

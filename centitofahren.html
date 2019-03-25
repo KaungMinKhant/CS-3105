@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>
+			Centigrade to Fahrenheit
+		</title>
+	</head>
+	<body>
+		<center>
+			<h1>
+				Centigrade to Fahrenheit
+			</h1>
+			<label>
+				Enter Degree in Centigrade
+			</label>
+			<input type = "text" id = "cen">
+			<button id = "btn" onclick = "centofah()">
+				Display Degree in Fahrenheit
+			</button>
+			<br>
+			<h1 id = "fah">
+			</h1>
+		</center>
+	</body>
+	<script>
+		function centofah()
+		{
+			var degCent = parseFloat(document.getElementById("cen").value);
+			degFagren = 9 / 5 * degCent + 32;
+			document.getElementById("fah").innerHTML="The degree in Fahrenheit is " + degFagren + "!!!";
+		}
+	</script>
+</html>

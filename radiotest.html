@@ -1,0 +1,25 @@
+<html>
+	<head>
+	</head>
+	<body>
+	<form>
+	<input type="radio" value="Frist Radio" name = "a">First Radio
+	<input type="radio" value="Second Radio" name = "a">Second Radio
+	<input type="radio" value="Third Radio" name = "a">Third Radio
+	<input type="radio" value="Fourth Radio" name = "a">Fourth Radio
+	</form>
+	<button id = "btn" onclick="check()">
+	Check
+	</button>
+	</body>
+	<script>
+	function check(){
+	var data = document.forms[0];
+	for(var i = 0; i < data.length; i++){
+		if(data[i].checked){
+		alert(data[i].value);
+		}
+	}
+	}
+	</script>
+</html>

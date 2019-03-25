@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+		</title>
+		<meta http-equiv = "x-ua-compatible" content = "IE=10">
+	</head>
+	<body>
+	<form id = "form1">
+		<input type = "radio" value = "1" name = "rd">1
+		<input type = "radio" value = "2" name = "rd">2
+		<input type = "radio" value = "3" name = "rd">3
+	</form>
+	<button id = "btn1" onclick = "process()">
+		Click Me
+	</button>
+	</body>
+	<script type = "text/vbscript">
+	
+	Sub process()
+	Dim data
+	data = document.forms["form1"]
+	Dim i
+	for i = 0 to data.length - 1
+	if data[i].checked == true
+	MsgBox data[i].value
+	end if
+	next
+	End Sub
+	</script>
+</html>
