@@ -1,0 +1,25 @@
+
+
+	total_mark = first_sub + second_sub + third_sub + fourth_sub
+
+	if total_mark/4 >= 0 AND total_mark/4 < 25 then
+	overall_grade = "1"
+	
+	else if total_mark/4 >= 25 AND total_mark/4 < 50 then
+	overall_grade = "2"
+	
+	else if total_mark/4 >= 50 AND total_mark/4 < 65 then
+	overall_grade = "3"
+	
+	else if total_mark/4 >= 65 AND total_mark/4 < 80 then
+	overall_grade = "4"
+	
+	else if total_mark/4 >= 80 AND total_mark/4 < 100 then
+	overall_grade = "5"
+	
+	else if total_mark/4 < 0 OR total_mark/4 > 100 then
+	overall_grade = "undefined"
+	end if
+
+	document.getElementById("total").value = total_mark
+	document.getElementById("grade").value = overall_grade

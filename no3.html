@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>
+			Number Three
+		</title>
+		<meta http-equiv = "x-ua-compatible" content = "IE=10">
+	</head>
+	<body>
+		<center>
+			<h1>
+				Grade And Total
+			</h1>
+			<label>
+				Enter First Subject Mark:
+			</label>
+			<input type = "text" id = "first_subj"><br><br>
+			<label>
+				Enter Second Subject Mark:
+			</label>
+			<input type = "text" id = "second_subj"><br><br>
+			<label>
+				Enter Third Subject Mark:
+			</label>
+			<input type = "text" id = "third_subj"><br><br>
+			<label>
+				Enter Fourth Subject Mark:
+			</label>
+			<input type = "text" id = "fourth_subj"><br><br>
+			<label>
+				Total Mark:
+			</label>
+			<input type = "text" id = "total"><br><br>
+			<label>
+				Grade:
+			</label>
+			<input type = "text" id = "grade"><br><br>
+			<button id = "btn1" onclick= "calculate()">
+				Calculate
+			</button>
+		</center>
+	</body>
+	<script type = "text/vbscript">
+
+	Sub calculate()
+	Dim first
+	first = CInt(document.getElementById("first_subj").value)
+	
+	
+	Dim second
+	second = CInt(document.getElementById("second_subj").value)
+	
+
+	Dim third
+	third = CInt(document.getElementById("third_subj").value)
+	
+
+	Dim fourth
+	fourth = CInt(document.getElementById("fourth_subj").value)
+	
+	Dim total
+	total = first + second + third + fourth
+	document.getElementById("total").value = total
+
+	Dim avg
+	avg = total / 4
+
+	Dim grade
+
+	if avg >= 0 and avg < 25 then
+	grade = "1"
+	end if
+
+	if avg >= 25 and avg < 50 then 
+	grade = "2"
+	end if
+	
+	if avg >= 50 and avg < 65 then 
+	grade = "3"
+	end if
+
+	if avg >= 65 and avg < 80 then 
+	grade = "4"
+	end if
+
+	if avg >= 80 and avg < 100 then 
+	grade = "5"
+	end if
+
+	if avg < 0 or avg > 100 then 
+	grade = "undefined"
+	end if
+
+	document.getElementById("grade").value = grade
+	
+	End Sub
+	</script>
+</html>

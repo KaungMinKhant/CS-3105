@@ -1,0 +1,26 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<input type = "text" id = "txt1">
+		<button id = "btn1" onclick = "check()">
+			Check
+		</button>
+	</body>
+	<script type = "text/javascript"s>
+	function check()
+	{
+		var txt1;
+		var read = true;
+		txt1 = document.getElementById("txt1").value;
+		if(txt1 == "")
+		{
+		read = false;
+		}
+		if(read == false)
+		{
+		console.log(read);
+		}
+	}
+	</script>
+</html>
